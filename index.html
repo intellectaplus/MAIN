@@ -886,7 +886,7 @@
         draw(b);
       }
       requestAnimationFrame(tick);
-    }
+    } 
     function point(x,y){ var r = cv.getBoundingClientRect(); mouse.x = x-r.left; mouse.y = y-r.top; }
     addEventListener('pointermove', function(e){ point(e.clientX, e.clientY); }, {passive:true});
     addEventListener('touchmove', function(e){ if(e.touches[0]) point(e.touches[0].clientX, e.touches[0].clientY); }, {passive:true});
